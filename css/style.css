@@ -103,6 +103,26 @@ header {
   font-size: 1.3rem;
   font-weight: 300;
 }
-/* Btn jogar de novo */
+/* Btn jogar de novo =======*/
+.container #btnRestart {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: var(--white);
+  color: var(--blue);
+  padding: 1rem;
+  margin-top: 3%;
+  font-size: 1.3rem;
+  border-radius: 01.3rem;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease-in-out;
 
+  display: none;
+}
+.container #btnRestart:hover {
+  background: var(--blue);
+  color: var(--white);
+
+}
+/* Footer */
 
