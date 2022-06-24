@@ -27,3 +27,14 @@ header {
     font-weight: 300;
 
   }
+  /* atalho para comentario control + : */
+  /*  Container ===================== */
+  .container {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient (to right, #ddd, #eee,#ddd);
+}
+
