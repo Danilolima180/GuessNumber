@@ -1,0 +1,17 @@
+/* Global =============== */
+:root {
+  --white:#fff; /*variaveis para cores no css*/
+  --blue: #00348a;
+  --blue-light:#0bbbd6;
+}
+* {    /*inset básico*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ubunto"; sans-serif;
+  text-decoration: none;
+
+}
+
+/*Header ************** */
+
