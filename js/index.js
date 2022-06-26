@@ -12,14 +12,15 @@ const Guess = {
     return Math.round(Math.random() * this.max);
   },
 };
+
 let numberDrawn = Guess.numberDrawn();
 
 function updateAttempt(attempt, value) {
-  attempt.innerHTML = "tentativa:" + value;
+  attempt.innerHTML = "Tentativa: " + value;
 }
 
 function handleSubmit(e) {
-  e.preventDefaut();
+  e.preventDefault();
 
   let kick = document.getElementById("kick").value;
 
@@ -32,7 +33,7 @@ function handleSubmit(e) {
 
   if (numberDrawn == kick) {
     playAgain();
-    status.innerHTML = "parabéns, Você Acertou";
+    status.innerHTML = "Parabéns, você acertou!";
     result.style.transition = "0.4s";
     result.style.backgroundColor = "#37c978";
     result.style.color = "#fff";
@@ -48,12 +49,15 @@ function handleSubmit(e) {
     clear();
   }
 }
+
 function playAgain() {
-  document.getElementById("bntRestart").style.display = "flex";
+  document.getElementById("btnRestart").style.display = "flex";
 }
+
 function restart() {
   document.location.reload(true);
 }
+
 function clear() {
   document.getElementById("kick").value = "";
 }
